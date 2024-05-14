@@ -1,0 +1,145 @@
+body{
+    background-color:#1a1e30 ;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.titles{
+    color: white;
+    font-weight: 400;
+}
+
+/* NAVBAR */
+nav{
+    color: white;
+}
+.nav-logo{
+    height: 3vh;
+    
+}
+
+/* HERO */
+#hero{
+    height: 60vh;
+    width: 100vw;
+
+}
+.hero-logo{
+    height: 50vh;
+}
+.hero-title{
+    font-size: 45px;
+}
+/* SOME ABOUT */
+#some-about{
+    height: auto;
+}
+.get-started {
+    color: #a4dba6;
+    background-color: rgba(56, 152, 236, 0);
+    border: 1px solid #ddf1de;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 25px;
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+.text-about {
+    border: 1px solid #35b8b0;
+    border-radius: 12px;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 95vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+}
+.some-text{
+    font-size: 20px;
+}
+
+
+/* SPECIALITIES */
+#specialities{
+    height: 40vh;
+    
+}
+.specialisties-list{
+    gap: 60px;
+    font-size: 20px;
+    width: 90vw;
+
+}
+
+
+/* LOCATIONS */
+
+/* FOR SPECIALITIES & LOCATIONS */
+.white-rounded-buttons{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white ;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+
+
+/* LOCATIONS */
+#locations{
+    height: 60vh;
+    width: 100vw;
+}
+.damas{
+    height: 30vh;
+}
+.damas-logo{
+    height: 20vh;
+    
+    
+}
+/* NEWS */
+#news{
+    height: 30vh;
+    width: 100vw;
+}
+/* PATIENT RESOURCES */
+#patient-resources{
+    height: 60vh;
+    width: 100vw;
+}
+
+
+/* CONTACT */
+#contact{
+    height: 60vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+/* MEDIA QUERIES */
+
+/* Smaller devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .specialisties-list, .some-text,.white-rounded-buttons{
+        font-size: 18px;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+}
+
+/* Larger devices (desktops, more than 992px) */
+@media (min-width: 992px) {
+    .specialisties-list, .some-text,.white-rounded-buttons{
+        font-size: 23px;
+    }
+    .hero-title{
+        font-size: 50px;
+    }
+}
