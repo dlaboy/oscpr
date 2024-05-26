@@ -1,6 +1,6 @@
 
 body{
-    /* background-color:#1a1e30 ; */
+    background-color:#1a1e30 ;
     background-color:#1a2230 ;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -9,7 +9,8 @@ body{
 /* HEADER */
 .header{
     background-color: transparent;
-    height: 30vh;
+    /* height: 30vh; */
+    padding-bottom: 2rem;
 
 }
 .header-title{
@@ -164,7 +165,7 @@ nav{
         height: 150vh;
     }
     #about-company{
-        height: 90vh;
+        height: 110vh;
     }
     .specialisties-list, .some-text,.white-rounded-buttons{
         font-size: 16px;
@@ -186,7 +187,7 @@ nav{
         height: 120vh;
     }
     #about-company{
-        height: 130vh;
+        height: 140vh;
     }
     #footer{
         height: 80vh;
