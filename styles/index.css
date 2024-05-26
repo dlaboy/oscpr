@@ -5,7 +5,7 @@ body{
     background-color:#1a1e30 ;
     font-family: 'Open Sans';
     font-weight: 400;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .home-container{
     display: flex;
