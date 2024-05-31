@@ -2,101 +2,259 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthopedics and Spine Center of Puerto Rico</title>
+    <link rel="icon" sizes="16x10" href="./imgs/TRANS2.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./imgs/TRANS2.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Map Source-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#phone').inputmask('999-999-9999');
+        });
+        function toggleOtherInput() {
+            var selectElement = document.getElementById("subject");
+            var otherInput = document.getElementById("otherInput");
+
+            if (selectElement.value === "option3") {
+                otherInput.classList.remove("d-none");
+                console.log(selectElement.value)
+            } else {
+                otherInput.classList.add("d-none");
+                console.log(selectElement.value)
+
+            }
+        }
+        document.addEventListener('scroll', function() {
+        const slidingDiv = document.getElementById('slidingDiv');
+        const rect = slidingDiv.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+        slidingDiv.classList.add('slide-in');
+        }
+});
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+   
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 ">
-        <div class="container-fluid">
-            <!-- Brand/logo -->
-            <a class="navbar-brand " href="#"><img class="nav-logo" src="../imgs/trANS3.png" alt=""></a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex justify-content-around w-100">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown d-flex flex-row">
-                        <a class="nav-link" href="about.html"  aria-current="page" >
-                            About Us
-                        </a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <!-- Nested Navbar for additional pages -->
-                            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown  d-flex flex-row">
-                        <a class="nav-link" href="specialities.html" >
-                            Specialities
-                        </a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                            <!-- Nested Navbar for additional pages -->
-                            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown  d-flex flex-row">
-                        <a class="nav-link " href="locations.html" >
-                            Locations
-                        </a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <!-- Nested Navbar for additional pages -->
-                            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown d-flex flex-row">
-                        <a class="nav-link " href="news.html" >
-                            News
-                        </a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                            <!-- Nested Navbar for additional pages -->
-                            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown d-flex flex-row">
-                        <a class="nav-link " href="patient.html" >
-                            Patient Resources
-                        </a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
-                            <!-- Nested Navbar for additional pages -->
-                            <li><a class="dropdown-item" href="#">Subpage 1</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 2</a></li>
-                            <li><a class="dropdown-item" href="#">Subpage 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                    </li>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark  p-3 ">
+            <div class="container-fluid">
+                <!-- Brand/logo -->
+                <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="#">
+                    <img src="../imgs/assa.png" alt="" class="nav-logo">
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-around w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex flex-column">
+                            <div class="d-flex flex-row w-100 justify-content-between">
+                                <a class="nav-link" href="../pages/about.html"  aria-current="page" >
+                                    About Us
+                                </a>
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
+                            </div>
+                            <div class="">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <!-- Nested Navbar for additional pages -->
+                                    <li><a class="dropdown-item" href="#">Company</a></li>
+                                    <li><a class="dropdown-item" href="#">Provider</a></li>
+                                    <li><a class="dropdown-item" href="#">Implant</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown  d-flex flex-column">
+                            <div class="d-flex flex-row w-100 justify-content-between">
+                                <a class="nav-link" href="#" >
+                                    Specialities
+                                </a>
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
+                            </div>
+                            <div class="">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <!-- Nested Navbar for additional pages -->
+                                    <li><a class="dropdown-item" href="#">Hip</a></li>
+                                    <li><a class="dropdown-item" href="#">Knee</a></li>
+                                    <li><a class="dropdown-item" href="#">Shoulder</a></li>
+                                    <li><a class="dropdown-item" href="#">Cervical</a></li>
+                                    <li><a class="dropdown-item" href="#">Lumbar</a></li>
+                                    <li><a class="dropdown-item" href="#">Thorax</a></li>
+                                    <li><a class="dropdown-item" href="#">Trauma</a></li>
+                                    <li><a class="dropdown-item" href="#">General Orthopedics</a></li>
+                                    <li><a class="dropdown-item" href="#">Joint Replacement</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown  d-flex flex-column">
+                            <div class="d-flex flex-row w-100 justify-content-between">
+                                <a class="nav-link " href="#" >
+                                    Locations
+                                </a>
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
+                            </div>
+                            <div class="">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                    <!-- Nested Navbar for additional pages -->
+                                    <li><a class="dropdown-item" href="#">Hospital Damas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown d-flex flex-column">
+                            
+                            <a class="nav-link " href="./news.html" >
+                                News
+                            </a>
+                            <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="#">Subpage 1</a></li>
+                                <li><a class="dropdown-item" href="#">Subpage 2</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item dropdown d-flex flex-column">
+                            <div class="d-flex flex-row w-100 justify-content-between">
+                                <a class="nav-link " href="#" >
+                                    Patient Resources
+                                </a>
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
+                            </div>
+                            <div class="">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                    <!-- Nested Navbar for additional pages -->
+                                    <li><a class="dropdown-item" href="./insurances.html">Insurances</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                        </li>
+    
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="text-center header-title">Contact Us</h1>
+    </div>
+    <section id="specialities" class="d-flex flex-md-row flex-column justify-content-center align-items-center">
+        <div class="container d-flex  justify-content-around  align-items-center p-3">
+           
+          <div class="">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <h3 class="header-title text-dark send-title text-center">Send a Message</h1>
+                <input type="hidden" name="access_key" value="a6f0f64d-8e05-4fa6-a767-d6d1f96fd546"> 
 
-                    
-                </ul>
+                <div class="form-group">
+                    <!-- <label for="name" class="some-text">Name</label> -->
+                    <input type="text" class="form-control  inputs rounded-pill p-3 " placeholder="Full Name" id="name" name="name" required >
+                </div>
+                <div class="form-group">
+                    <!-- <label for="email">Email</label> -->
+                    <!-- <input type="email" class="form-control" id="email" name="email" required > -->
+                    <input type="email" id="email" name="email" class="form-control  inputs rounded-pill p-3" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="example@example.com" required>
+
+                </div>
+                <div class="form-group">
+                    <!-- <label for="phone">Phone Number</label> -->
+                    <input type="tel" class="form-control  inputs rounded-pill p-3" id="phone" name="phone" placeholder="999-999-9999">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="subject" class="d-flex flex-row justify-content-between">
+                        Subject
+                    </label> -->
+                    <select id="subject" name="_subject" required onchange="toggleOtherInput()" class="form-control  inputs rounded-pill p-3" >
+                        <option value="" class="inputs " disabled selected  class="d-flex flex-row justify-content-between">
+                            Select an Subject
+                        </option>
+                        <option value="Specialities">Specialities</option>
+                        <option value="Locations">Locations</option>
+                        <option value="Insurance">Insurances</option>
+                        <option value="option3">Other</option>
+                    </select>               
+                </div>
+                <div id="otherInput" class="d-none">
+                    <!-- <label for="other">Please specify:</label> -->
+                    <input type="text" id="other" name="other" class="form-control  inputs rounded-4" placeholder="Specify subject">
+                </div>
+        
+                <div class="form-group">
+                    <!-- <label for="message">Message</label> -->
+                    <textarea class="form-control  inputs textarea p-3" id="message" name="message" placeholder="Enter message" rows="5" required></textarea>
+                </div>
+                <div class="w-100 d-flex justify-content-center ">
+                    <button type="submit" class=" p-2 w-100 send-button">
+                        <i class="fas fa-paper-plane send-icon"></i>
+
+                    </button>
+                </div>
+            </form>
+            
+          </div>
+          
+        </div>
+        <div class="d-flex w-100 justify-content-end">
+        <div class="d-flex contact-data flex-column justify-content-around align-items-end w-75 ">
+                <div id="slidingDiv" class=" d-flex flex-column align-items-end justify-content-around h-100 w-100">
+                    <div class="hero-foot shadow d-flex flex-row rounded-pill justify-content-around align-items-center contact-info p-3 w-100">
+                        <img src="../imgs/phone.png" class="contact-logo me-1" alt="">
+                        <div class="contact-text fst-italic ms-2 text-white">999-999-9999</div>
+                    </div>
+                    <div class="hero-foot shadow d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
+                        <img src="../imgs/email-4.png" class="contact-logo" alt="">
+                        <div class="contact-text fst-italic ms-2 text-white">info@oscpr.com</div>
+                    </div>
+                    <div class="hero-foot shadow d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
+                        <img src="../imgs/location-2.png" class="contact-logo" alt="">
+                        <div class="contact-text fst-italic ms-2 text-white">Hospital Damas</div>
+                    </div>
+                    <!-- <div class="d-flex flex-column justify-content-center align-items-center w-100 rounded-pill inputs p-3">
+                        <img src="../imgs/logo.png" class="damas-logo" alt="">
+                        <h3 class="text-dark contact-text">Hospital Damas</h3>
+                        <div class="text-secondary contact-text text-center">
+                            2213 Ponce Bypass, Ponce, 00717
+                        </div>
+                    </div> -->
+                </div>  
             </div>
         </div>
-    </nav>
-    <h1>Contact Us</h1>
+    </section>
+    <section id="footer" class="d-flex align-items-center">
+        <div class="footer-container container-fluid d-flex flex-lg-row flex-column justify-content-around align-items-center">
+            <div class="foot-logo-container d-flex justify-content-center align-items-center w-100">
+                <img src="../imgs/trANS3.png" alt="" class="foot-logo-container-img">
+            </div>
+            
+        </div>
+    </section>
+    <script>
+      
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+ 
+
 </body>
 </html>

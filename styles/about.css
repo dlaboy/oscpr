@@ -27,7 +27,8 @@ nav{
     
 }
 #about-intro{
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(238, 238, 238);
 }
 
 .dropdown-menu{
@@ -124,6 +125,7 @@ nav{
     z-index: 3;
 
 }
+/* Footer */
 #footer{
     height: 60vh;
     width: 100vw;
