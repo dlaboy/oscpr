@@ -1,0 +1,141 @@
+
+body{
+    background-color:#1a1e30 ;
+    background-color:#1a2230 ;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    /* overflow: hidden; */
+}
+/* HEADER */
+.header{
+    background-color: transparent;
+    /* height: 30vh; */
+    padding-bottom: 2rem;
+
+}
+.header-title{
+    font-size: 40px;
+    color: white;
+}
+/* NAVBAR */
+nav{
+    color: white;
+}
+
+.nav-logo{
+    height: 15vh;
+    
+}
+#about-intro{
+    background-color: white;
+}
+
+.dropdown-menu{
+    background-color: #1a1e30;
+    /* border-color: white; */
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+#specialities{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+}
+.some-text{
+    font-size: 17px;
+}
+
+#footer{
+    height: 60vh;
+    width: 100vw;
+}
+.footer-container{
+    height: 90%;
+}
+.damas{
+    height: 30vh;
+}
+.damas-logo{
+    height: 20vh;
+    
+    
+}
+.hero-foot{
+    color: white;
+}
+.hero-logo-foot{
+    height: 3vh;
+}
+.foot-logo-container{
+    height: 30vh;
+}
+.foot-logo-container-img{
+    height: 20vh;
+
+    
+}
+
+@media (max-width: 768px) {
+    /* .about-text{
+        height: 150vh;
+    }
+    #about-company{
+        height: 160vh;
+    } */
+    /* .specialisties-list, .some-text,.white-rounded-buttons{
+        font-size: 16px;
+    } */
+    .some-text{
+        font-size: 16px;
+    }
+    /* .about-tag{
+        font-size: 25px;
+    
+    } */
+    .header-title{
+        font-size: 25px;
+    }
+    #footer{
+        height: 90vh;
+    }
+
+}
+@media (min-width:769px) and (max-width: 991px) {
+    /* .about-text{
+        height: 120vh;
+    }
+    #about-company{
+        height: 140vh;
+    } */
+    #footer{
+        height: 80vh;
+    }
+
+
+}
+
+/* Larger devices (desktops, more than 992px) */
+@media (min-width: 992px) {
+    /* .specialisties-list, .some-text,.white-rounded-buttons{
+        font-size: 15px;
+    } */
+    .some-text{
+        font-size: 15px;
+    }
+   
+    /* .about-tag{
+        font-size: 30px;
+    
+    } */
+    .header-title{
+        font-size: 40px;
+        
+    } 
+ 
+}
+
