@@ -26,6 +26,22 @@ nav{
     height: 15vh;
     
 }
+.location-content{
+    /* display: flex ; */
+    /* flex-direction: row; */
+    /* background-color: #1a1e30a5 ; */
+    background-color: rgb(238, 238, 238);
+    
+}
+#location_map{
+    /* position: absolute;  */
+    height: 50vh;
+    /* top: 0; 
+    bottom: 0;  */
+    /* width: 40vw; */
+    /* z-index: -1; */
+
+}
 #about-intro{
     background-color: white;
 }
@@ -33,6 +49,11 @@ nav{
 .dropdown-menu{
     background-color: #1a1e30;
     /* border-color: white; */
+}
+.about-tag{
+    font-size: 35px;
+    font-family: 'Oswald';
+
 }
 .dropdown-item{
     color: white;
@@ -43,15 +64,17 @@ nav{
 }
 #specialities{
     width: 100vw;
-    height: 80vh;
-    background-color: white;
+    height: 90vh;
+    /* background-color: #2b3951b7; */
+    /* background-color: white; */
+    /* z-index: 1; */
 }
 .some-text{
     font-size: 17px;
 }
 
 #footer{
-    height: 60vh;
+    height: 20vh;
     width: 100vw;
 }
 .footer-container{
@@ -61,7 +84,7 @@ nav{
     height: 30vh;
 }
 .damas-logo{
-    height: 20vh;
+    height: 10vh;
     
     
 }
@@ -101,7 +124,7 @@ nav{
         font-size: 25px;
     }
     #footer{
-        height: 90vh;
+        height: 40vh;
     }
 
 }
@@ -113,7 +136,7 @@ nav{
         height: 140vh;
     } */
     #footer{
-        height: 80vh;
+        height: 40vh;
     }
 
 

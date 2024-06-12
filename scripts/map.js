@@ -4,10 +4,16 @@ const map = new mapboxgl.Map({
     center: [-66.617772,17.997133], // starting position [lng, lat]
     zoom: 16, // starting zoom
     pitch: 62, // starting pitch
-    bearing: -20 // starting bearing
+    bearing: -20, // starting bearing
+    style: 'mapbox://styles/mapbox/standard'
 });
 
 map.on('style.load', () => {
+
+    new mapboxgl.Marker({ color: 'green' })
+    .setLngLat([-66.617772, 17.997133]) // Marker coordinates
+    .addTo(map);
+
     map.addSource('line', {
         type: 'geojson',
         lineMetrics: true,

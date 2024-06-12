@@ -116,6 +116,12 @@ nav{
     display: flex;
     transition: all ease-in 0.2s;
 }
+.coming{
+    color: #a4dba6;
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+
+}
 .get-started:hover{
     color: rgb(9, 23, 36);
     background-color: #a4dba6;
