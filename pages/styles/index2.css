@@ -34,11 +34,12 @@ body{
 .disclaimer-bottom{
     display:none;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 20vh;
+    right: 0;
 }
 .disclaimer-button-bottom{
-    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     padding: 12px 22px;
 }
 .disclaimer-line {
@@ -349,7 +350,7 @@ nav{
         font-size: 30px;
     }
     .disclaimer-button-bottom{
-        border-top-right-radius: 50px;
+        /* border-top-right-radius: 50px; */
         padding: 8px 28px;
     }
 }
