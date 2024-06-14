@@ -3,11 +3,11 @@
 /* Added change for individual submission */
 body{
     /* background-color:#1a1e30 ; */
-    background-color:#383c50 ;
     font-family: 'Open Sans';
     font-weight: 400;
 
-    /* overflow: hidden; */
+    overflow: hidden;
+
 }
 .home-container{
     display: flex;
@@ -96,7 +96,7 @@ height: 100vh;
 transform: translate(-50%, -50%);
 }
 
-.video-foreground iframe {
+/* .video-foreground iframe {
 width: 100vw;
 height: 55.25vw; 
 min-height: 100vh;
@@ -104,7 +104,16 @@ min-width: 177.78vh;
 border: none;
 transform: scale(1.2);
 
-}
+} */
+.video-background {
+    width: 100vw;
+    height: 55.25vw; 
+    min-height: 100vh;
+    min-width: 177.78vh; 
+    border: none;
+    transform: scale(1.2);
+    
+    }
 .titles{
     color: white;
     font-weight: 400;
