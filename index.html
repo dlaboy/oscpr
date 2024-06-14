@@ -24,7 +24,7 @@
 <body>
     <div class="video-background">
         <div  class="video-foreground">
-            <iframe src="https://www.youtube.com/embed/Zb7VmzaijdI?autoplay=1&mute=1&loop=1&playlist=Zb7VmzaijdI&controls=0&modestbranding=1&showinfo=0&vq=hd1080" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/IoXA00lLFdI?autoplay=1&mute=1&loop=1&playlist=IoXA00lLFdI&controls=0&modestbranding=1&showinfo=0&vq=hd1080" frameborder="0" allow="autoplay; fullscreen"></iframe>
             <!-- <iframe src="https://drive.google.com/file/d/175113l38AgVHIHdq9TWLyaP-7wsr4oXQ/view?usp=share_link" frameborder="0" allow="autoplay; fullscreen"></iframe> -->
         </div>
     </div>
@@ -153,12 +153,19 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Contact Us</a>
                         </li>
+                        <li class="disclaimer-nav">
+                            <button class="disclaimer-button disclaimer-button-nav fst-italic disclaimer-button-text" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Disclaimer</button>
+
+                        </li>
     
                         
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="disclaimer disclaimer-bottom">
+            <button class="disclaimer-button disclaimer-button-bottom fst-italic" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Disclaimer</button>
+        </div>
         <section id="hero" class="d-flex flex-column justify-content-center align-items-center container h-100">
             <h1 class="titles hero-title text-center">   <span class="hero-keywords">Orthopedic</span> and <span class="hero-keywords">Spine</span> <span class="hero-keywords">Center</span> of <span class="hero-keywords">Puerto Rico</span> </h1>
             <h3 class="text-white some-text text-center">Heal, Improve, Thrive: Orthopedic and Spine Care at Its Best</h3>
@@ -171,7 +178,7 @@
             <!-- <div class="d-flex justify-content-center align-items-end">
                 <a class="get-started mt-3 text-decoration-none" href="/pages/main-pages/about.html">Get Started</a>
             </div> -->
-            <a href="" class="coming text-decoration-none fst-italic">Coming Soon</a>
+            <p href="" class="coming text-decoration-none fst-italic">Coming Soon</p>
             <div class="d-flex flex-sm-row flex-column w-100 h-50 justify-content-around align-items-center">
                 <div class="hero-foot d-flex flex-row">
                     <img src="/pages/imgs/phone-call-3.png" class="hero-logo-foot me-1" alt="">
@@ -184,6 +191,59 @@
             </div>
         </section>
     </div>
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  ">
+          <div class="modal-content disclaimer-modal">
+            <div class="modal-header d-flex justify-content-center flex-column text-center">
+                <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="#">
+                    <img src="./pages/imgs/saax.png" alt="" class="nav-logo">
+                </a>
+              <h5 class="modal-title p-2" id="exampleModalLabel">Industry Relationships and Conflict of Interest</h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body d-flex flex-column gap-3">
+              <div class="disclaimer-line">Below is a position statement from Orthopedic & Spine Centers of Puerto Rico (OSCPR) regarding our physician relationships with other companies within the healthcare related industry, including but not limited to external medical device companies.</div>
+                <div class="disclaimer-line">Our physicians are actively involved in clinical care, education, and orthopedic research. Because of our mission, we focus our recruitment efforts on physicians who have superior academic and clinical training, and who also are actively involved in orthopedic research and education directed at advancing orthopedic surgery and improving patient outcomes. Information about our physicians’ education, training and experience can be accessed here.</div>
+                <div class="disclaimer-line">Because of the qualifications of our physicians and other professionals, we often are approached by companies involved in the (or related to the) improvement of the healthcare outcomes, processes, management in the healthcare industry and/or development of medical devices, instruments, and related equipment. Many of these companies know that our physicians have invaluable hands-on experience in the treatment of orthopedic problems, and that orthopedic surgeons frequently make important contributions to the development and improvement of devices and other equipment used in the treatment of orthopedic conditions.</div>
+                <div class="disclaimer-line">Although OSCPR physicians donate time to the advancement of orthopedic research and education, they also from time to time enter into contracts that provide payment for some of their efforts. Payment for the services provided by orthopedic surgeons may come in the form of hourly consulting fees for services provided by the physicians; royalties based on sales of products to which OSCPR physicians made important contributions (excluding sales of products used on our patients); and/or outright purchase of technologies. All these transactions are compliant with all federal and state laws.</div>
+                <div class="disclaimer-line">If you receive treatment with OSCPR, OSCPR will decide the best treatment for your current conditions in accordance with your personal consent.</div>
+                <div class="disclaimer-line">
+                    <div class="disclaimer-line">The following companies will provide equipment and implants use during your treatment:
+
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <ul>
+                            <li>Smith and Nephew
+
+                            </li>
+                            <li>Stryker
+
+                            </li>
+                            <li>Zimmer Biomet
+
+                            </li>
+                            <li>Altus Spine
+
+                            </li>
+                            <li>Evolution Spine
+
+                            </li>
+                            <li>TIDI
+
+                            </li>
+                            <li>AMERHX Health Care
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="get-started disclaimer-button-nav fst-italic" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- <section id="specialities" class="d-flex justify-content-center flex-column align-items-center">
         <h1 class="dark-titles">Specialities</h1>
    
