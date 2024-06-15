@@ -1,6 +1,6 @@
 
 body{
-    background-color:#1a1e30 ;
+    /* background-color:#1a1e30 ; */
     background-color:#1a2230 ;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -26,16 +26,55 @@ nav{
     height: 15vh;
     
 }
-.location-content{
+.location-content, .link-to-contact{
     /* display: flex ; */
     /* flex-direction: row; */
     /* background-color: #1a1e30a5 ; */
     background-color: rgb(238, 238, 238);
     
 }
+.hospital-icon{
+    height: 50vh;
+    width: 40vw;
+    border-radius: 400px;
+}
+.copy-button {
+    color: #505951;
+    background-color: rgba(56, 152, 236, 0);
+    border: 1px solid #50595100;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px 15px; */
+    font-family: Open Sans, sans-serif;
+    font-size: 13px;
+    display: flex;
+    transition: all ease-in 0.2s;
+}
+
+.contact-now {
+    color: #505951;
+    background-color: rgba(56, 152, 236, 0);
+    border: 1px solid #505951cf;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    display: flex;
+    transition: all ease-in 0.2s;
+}
+.contact-now:hover{
+    color: rgb(9, 23, 36);
+    background-color: #a4dba6;
+
+}
 #location_map{
     /* position: absolute;  */
     height: 50vh;
+    width: 50vw;
+
     /* top: 0; 
     bottom: 0;  */
     /* width: 40vw; */
@@ -62,9 +101,14 @@ nav{
     display: block;
     margin-top: 0;
 }
+.info-hospital{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 #specialities{
     width: 100vw;
-    height: 90vh;
+    /* height: 90vh; */
     /* background-color: #2b3951b7; */
     /* background-color: white; */
     /* z-index: 1; */
@@ -74,26 +118,28 @@ nav{
 }
 
 #footer{
-    height: 20vh;
+    /* height: 20vh; */
     width: 100vw;
+    /* background-color: rgb(238, 238, 238); */
+
 }
-.footer-container{
-    height: 90%;
-}
-.damas{
+/* .footer-container{
+    height: 100%;
+} */
+/* .damas{
     height: 30vh;
-}
-.damas-logo{
+} */
+/* .damas-logo{
     height: 10vh;
     
     
-}
-.hero-foot{
+} */
+/* .hero-foot{
     color: white;
-}
-.hero-logo-foot{
+} */
+/* .hero-logo-foot{
     height: 3vh;
-}
+} */
 .foot-logo-container{
     height: 30vh;
 }
@@ -101,6 +147,13 @@ nav{
     height: 20vh;
 
     
+}
+.hospital-imagen{
+    width: 20vw;
+    /* border-top-left-radius: 30px; */
+    /* border-top-right-radius: 30px; */
+
+
 }
 
 @media (max-width: 768px) {
@@ -123,8 +176,25 @@ nav{
     .header-title{
         font-size: 25px;
     }
-    #footer{
+    /* #footer{
         height: 40vh;
+    } */
+    .hospital-imagen{
+        width:83vw;
+        /* border-top-left-radius: 30px; */
+        /* border-top-right-radius: 30px; */
+    
+    
+    }
+    #location_map{
+        width: 83vw;
+
+    }
+    .hospital-icon-container{
+        display: none;
+    }
+    .info-hospital{
+        align-items: center;
     }
 
 }
@@ -135,9 +205,27 @@ nav{
     #about-company{
         height: 140vh;
     } */
-    #footer{
+    /* #footer{
         height: 40vh;
+    } */
+    .hospital-imagen{
+        width: 75vw;
+        /* border-top-left-radius: 30px; */
+        /* border-top-right-radius: 30px; */
+    
+    
     }
+    #location_map{
+        width: 75vw;
+
+    }
+    .hospital-icon-container{
+        display: none;
+    }
+    .info-hospital{
+        align-items: center;
+    }
+  
 
 
 }
@@ -159,6 +247,7 @@ nav{
         font-size: 40px;
         
     } 
+    
  
 }
 

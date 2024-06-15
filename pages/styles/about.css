@@ -58,7 +58,7 @@ nav{
 
 }
 .some-text{
-    font-size: 17px;
+    font-size: 35px;
 }
 
 #about-company{
@@ -169,8 +169,11 @@ nav{
     #about-company{
         height: 120vh;
     }
-    .specialisties-list, .some-text,.white-rounded-buttons{
+    .specialisties-list,.white-rounded-buttons{
         font-size: 16px;
+    }
+    .some-text{
+        font-size: 20px;
     }
     .about-tag{
         font-size: 25px;
@@ -194,14 +197,20 @@ nav{
     #footer{
         height: 80vh;
     }
+    .some-text{
+        font-size: 23px;
+    }
 
 
 }
 
 /* Larger devices (desktops, more than 992px) */
 @media (min-width: 992px) {
-    .specialisties-list, .some-text,.white-rounded-buttons{
+    .specialisties-list,.white-rounded-buttons{
         font-size: 15px;
+    }
+    .some-text{
+        font-size: 20px;
     }
    
     .about-tag{
