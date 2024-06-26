@@ -112,7 +112,10 @@
                         </li>
                         <li class="nav-item dropdown  d-flex flex-column">
                             <div class="d-flex flex-row w-100 justify-content-between">
-                                <a class="nav-link" href="/pages/main-pages/specialities.html" >
+                                <!-- <a class="nav-link" href="/pages/main-pages/specialities.html" >
+                                    Specialities
+                                </a> -->
+                                <a class="nav-link" href="#" >
                                     Specialities
                                 </a>
                                 <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
@@ -212,20 +215,20 @@
             
                 <div class="d-flex flex-row w-100">
                     <div class="form-group w-100">
-                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="First Name" id="first_name" name="first_name" required>
+                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="First Name (Nombre)" id="first_name" name="first_name" required>
                     </div>
                     <div class="form-group w-100 ms-1">
-                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="Last Name" id="last_name" name="last_name" required>
+                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="Last Name (Apellido)" id="last_name" name="last_name" required>
                     </div>
                 </div>
             
                 <div class="form-group">
-                    <input type="tel" class="form-control inputs rounded-pill p-3" id="phone" name="phone" placeholder="Phone Number">
+                    <input type="tel" class="form-control inputs rounded-pill p-3" id="phone" name="phone" placeholder="Phone Number (Número de Teléfono)">
                 </div>
                 
                 <div class="form-group">
                     <select id="insurances" name="insurances" required onchange="toggleOtherInput()" class="form-control inputs rounded-pill p-3">
-                        <option value="" disabled selected>Insurances</option>
+                        <option value="" disabled selected>Insurances (Seguros Médicos)</option>
                         <option value="Medicare">Medicare</option>
                         <option value="Locations">MMM & PMC</option>
                         <option value="Humana">Humana Advantage</option>
@@ -243,37 +246,37 @@
                         <option value="Ampr - Asociacion de Maestros De PR">Ampr - Asociacion de Maestros De PR</option>
                         <option value="ACAA">ACAA</option>
                         <option value="CFSE">CFSE - Fondo</option>
-                        <option value="Other">Other</option>
+                        <option value="Other">Other (Otros)</option>
 
                     </select>
                 </div>
                 <div id="otherInput" class="d-none">
-                    <input type="text" id="other" name="other" class="form-control inputs rounded-pill p-3" placeholder="Specify insurances">
+                    <input type="text" id="other" name="other" class="form-control inputs rounded-pill p-3" placeholder="Specify insurances (Especifique su Seguro Médico)">
                 </div>
                 
                 <div class="form-group">
                     <select id="purpose" name="purpose" required class="form-control inputs rounded-pill p-3">
-                        <option value="" disabled selected>Purpose</option>
+                        <option value="" disabled selected>Purpose (Propósito)</option>
                         <option value="general">General</option>
-                        <option value="appointment">Cita</option>
+                        <option value="appointment">Appointment (Citas)</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
                     <select id="condition" name="condition" required onchange="toggleOtherInputCondition()" class="form-control inputs rounded-pill p-3">
-                        <option value="" disabled selected>Condition</option>
-                        <option value="hip">Hip</option>
-                        <option value="knee">Knee</option>
-                        <option value="column">Column</option>
-                        <option value="other">Other</option>
+                        <option value="" disabled selected>Condition (Condición)</option>
+                        <option value="hip">Hip (Cadera)</option>
+                        <option value="knee">Knee (Rodilla)</option>
+                        <option value="column">Spine (Columna)</option>
+                        <option value="other">Other (Otros)</option>
                     </select>
                 </div>
                 <div id="otherInputCondition" class="d-none">
-                    <input type="text" id="otherCondition" name="otherCondition" class="form-control inputs rounded-pill p-3" placeholder="Specify Condition">
+                    <input type="text" id="otherCondition" name="otherCondition" class="form-control inputs rounded-pill p-3" placeholder="Specify Condition (Especifique su Condición)">
                 </div>
             
                 <div class="form-group">
-                    <textarea class="form-control inputs textarea p-3" id="message" name="message" placeholder="Comments" rows="5" required></textarea>
+                    <textarea class="form-control inputs textarea p-3" id="message" name="message" placeholder="Comments (Comentarios)" rows="5" required></textarea>
                 </div>
                 <div class="w-100 d-flex justify-content-center">
                     <button type="submit" class="p-2 w-100 send-button">
@@ -295,6 +298,7 @@
                         <img src="../imgs/email-4.png" class="contact-logo" alt="">
                         <div class="contact-text fst-italic ms-2 text-white">info@oscpr.com</div>
                     </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center flex-column">For appointments: <div class="contact-text fst-italic ms-2 text-white">appointments@oscpr.com</div></div>
                     <div class="hero-foot  d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
                         <img src="../imgs/location-2.png" class="contact-logo" alt="">
                         <div class="contact-text fst-italic ms-2 text-white">Hospital Damas</div>
