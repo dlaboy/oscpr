@@ -21,14 +21,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script>
-        $(document).ready(function() {
+         $(document).ready(function() {
             $('#phone').inputmask('(999) 999-9999');
         });
+        
+       
         function toggleOtherInput() {
-            var selectElement = document.getElementById("subject");
+            var selectElement = document.getElementById("insurances");
             var otherInput = document.getElementById("otherInput");
 
-            if (selectElement.value === "option3") {
+            if (selectElement.value === "Other") {
+                otherInput.classList.remove("d-none");
+                console.log(selectElement.value)
+            } else {
+                otherInput.classList.add("d-none");
+                console.log(selectElement.value)
+
+            }
+        }
+        function toggleOtherInputCondition() {
+            var selectElement = document.getElementById("condition");
+            var otherInput = document.getElementById("otherInputCondition");
+
+            if (selectElement.value === "other") {
                 otherInput.classList.remove("d-none");
                 console.log(selectElement.value)
             } else {
@@ -45,7 +60,8 @@
         if (rect.top <= windowHeight && rect.bottom >= 0) {
         slidingDiv.classList.add('slide-in');
         }
-});
+        });
+        
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -71,7 +87,10 @@
                         </li>
                         <li class="nav-item dropdown d-flex flex-column">
                             <div class="d-flex flex-row w-100 justify-content-between">
-                                <a class="nav-link" href="/pages/main-pages/about.html"  aria-current="page" >
+                                <!-- <a class="nav-link" href="/pages/main-pages/about.html"  aria-current="page" >
+                                    About Us
+                                </a> -->
+                                <a class="nav-link" href="#"  aria-current="page" >
                                     About Us
                                 </a>
                                 <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
@@ -79,9 +98,12 @@
                             <div class="">
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <!-- Nested Navbar for additional pages -->
-                                    <li><a class="dropdown-item" href="/pages/about-pages/company.html">Company</a></li>
+                                    <!-- <li><a class="dropdown-item" href="/pages/about-pages/company.html">Company</a></li>
                                     <li><a class="dropdown-item" href="/pages/about-pages/provider.html">Provider</a></li>
-                                    <li><a class="dropdown-item" href="/pages/about-pages/implant.html">Implant</a></li>
+                                    <li><a class="dropdown-item" href="/pages/about-pages/implant.html">Implant</a></li> -->
+                                    <li><a class="dropdown-item" href="#">Company</a></li>
+                                    <li><a class="dropdown-item" href="#">Provider</a></li>
+                                    <li><a class="dropdown-item" href="#">Implant</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -95,7 +117,7 @@
                             <div class="">
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
                                     <!-- Nested Navbar for additional pages -->
-                                    <li><a class="dropdown-item" href="/pages/specs-pages/hip.html">Hip</a></li>
+                                    <!-- <li><a class="dropdown-item" href="/pages/specs-pages/hip.html">Hip</a></li>
                                     <li><a class="dropdown-item" href="/pages/specs-pages/knee.html">Knee</a></li>
                                     <li><a class="dropdown-item" href="/pages/specs-pages/shoulder.html">Shoulder</a></li>
                                     <li><a class="dropdown-item" href="/pages/specs-pages/cervical.html">Cervical</a></li>
@@ -103,14 +125,25 @@
                                     <li><a class="dropdown-item" href="/pages/specs-pages/thorax.html">Thorax</a></li>
                                     <li><a class="dropdown-item" href="/pages/specs-pages/trauma.html">Trauma</a></li>
                                     <li><a class="dropdown-item" href="/pages/specs-pages/general_orthopedics.html">General Orthopedics</a></li>
-                                    <li><a class="dropdown-item" href="/pages/specs-pages/joint_replacement.html">Joint Replacement</a></li>
+                                    <li><a class="dropdown-item" href="/pages/specs-pages/joint_replacement.html">Joint Replacement</a></li> -->
+                                    <li><a class="dropdown-item" href="#">Hip</a></li>
+                                    <li><a class="dropdown-item" href="#">Knee</a></li>
+                                    <li><a class="dropdown-item" href="#">Shoulder</a></li>
+                                    <li><a class="dropdown-item" href="#">Cervical</a></li>
+                                    <li><a class="dropdown-item" href="#">Lumbar</a></li>
+                                    <li><a class="dropdown-item" href="#">Thorax</a></li>
+                                    <li><a class="dropdown-item" href="#">Trauma</a></li>
+                                    <li><a class="dropdown-item" href="#">General Orthopedics</a></li>
+                                    <li><a class="dropdown-item" href="#">Joint Replacement</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown  d-flex flex-column">
                             <div class="d-flex flex-row w-100 justify-content-between">
-                                <a class="nav-link " href="/pages/main-pages/locations.html" >
-                                <!-- <a class="nav-link " href="./pages/locations.html" > -->
+                                <!-- <a class="nav-link " href="/pages/main-pages/locations.html" >
+                                    Locations
+                                </a> -->
+                                <a class="nav-link " href="#" >
                                     Locations
                                 </a>
                                 <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a> -->
@@ -124,7 +157,10 @@
                         <li class="nav-item dropdown d-flex flex-column">
                             
                             <!-- <a class="nav-link " href="./pages/news.html" > -->
-                            <a class="nav-link " href="/pages/main-pages/news.html" >
+                            <!-- <a class="nav-link " href="/pages/main-pages/news.html" >
+                                News
+                            </a> -->
+                            <a class="nav-link " href="#" >
                                 News
                             </a>
                             <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false" > </a>
@@ -144,13 +180,16 @@
                             <div class="">
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
                                     <!-- Nested Navbar for additional pages -->
-                                    <li><a class="dropdown-item" href="/pages/patient-pages/insurances.html">Insurances</a></li>
-                                    <li><a class="dropdown-item" href="/pages/patient-pages/videos.html">Videos</a></li>
+                                    <!-- <li><a class="dropdown-item" href="/pages/patient-pages/insurances.html">Insurances</a></li>
+                                    <li><a class="dropdown-item" href="/pages/patient-pages/videos.html">Videos</a></li> -->
+                                    <li><a class="dropdown-item" href="#">Insurances</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/pages/main-pages/contact.html">Contact Us</a>
+                            
                         </li>
     
                         
@@ -160,84 +199,103 @@
         </nav>
         <h1 class="text-center header-title">Contact Us</h1>
     </div>
-    <section id="specialities" class="d-flex flex-md-row flex-column justify-content-center align-items-center">
-        <div class="container d-flex  justify-content-around  align-items-center p-3">
+    <section id="specialities" class=" d-flex flex-md-row flex-column justify-content-center align-items-center">
+        <div class="container  d-flex justify-content-around  align-items-center p-3 contact-container">
            
           <div class="">
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <h3 class="header-title text-dark send-title text-center">Send a Message</h1>
-                <input type="hidden" name="access_key" value="a6f0f64d-8e05-4fa6-a767-d6d1f96fd546"> 
+            <form  id="dynamicForm" method="POST" class="contact-form">
+                <h3 class="header-title text-dark text-center send-title">Send a Message</h3>
+                <input type="hidden" id="accessKey" name="access_key">
+            
+                <div class="d-flex flex-row w-100">
+                    <div class="form-group w-100">
+                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="First Name" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="form-group w-100 ms-1">
+                        <input type="text" class="form-control inputs rounded-pill p-3" placeholder="Last Name" id="last_name" name="last_name" required>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <input type="tel" class="form-control inputs rounded-pill p-3" id="phone" name="phone" placeholder="Phone Number">
+                </div>
+                
+                <div class="form-group">
+                    <select id="insurances" name="insurances" required onchange="toggleOtherInput()" class="form-control inputs rounded-pill p-3">
+                        <option value="" disabled selected>Insurances</option>
+                        <option value="Medicare">Medicare</option>
+                        <option value="Locations">MMM & PMC</option>
+                        <option value="Humana">Humana Advantage</option>
+                        <option value="Triple S Advantage">Triple S Advantage</option>
+                        <option value="Triple S Advantage">Triple S Advantage</option>
+                        <option value="Medicaid">Medicaid</option>
+                        <option value="MMM - Vital">MMM - Vital</option>
+                        <option value="First Medical Vital">First Medical Vital</option>
+                        <option value="Menonita Vital">Menonita Vital</option>
+                        <option value="Triple Vital">Triple Vital</option>
+                        <option value="Triple S">Triple S</option>
+                        <option value="MCS - Medical Cards Systems">Medical Cards Systems</option>
+                        <option value="Mapfre">Mapfre</option>
+                        <option value="Menonita">Menonita</option>
+                        <option value="Ampr - Asociacion de Maestros De PR">Ampr - Asociacion de Maestros De PR</option>
+                        <option value="ACAA">ACAA</option>
+                        <option value="CFSE">CFSE - Fondo</option>
+                        <option value="Other">Other</option>
 
-                <div class="form-group">
-                    <!-- <label for="name" class="some-text">Name</label> -->
-                    <input type="text" class="form-control  inputs rounded-pill p-3 " placeholder="Full Name" id="name" name="name" required >
-                </div>
-                <div class="form-group">
-                    <!-- <label for="email">Email</label> -->
-                    <!-- <input type="email" class="form-control" id="email" name="email" required > -->
-                    <input type="email" id="email" name="email" class="form-control  inputs rounded-pill p-3" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="example@example.com" required>
-
-                </div>
-                <div class="form-group">
-                    <!-- <label for="phone">Phone Number</label> -->
-                    <input type="tel" class="form-control  inputs rounded-pill p-3" id="phone" name="phone" placeholder="999-999-9999">
-                </div>
-                <div class="form-group">
-                    <!-- <label for="subject" class="d-flex flex-row justify-content-between">
-                        Subject
-                    </label> -->
-                    <select id="subject" name="_subject" required onchange="toggleOtherInput()" class="form-control  inputs rounded-pill p-3" >
-                        <option value="" class="inputs " disabled selected  class="d-flex flex-row justify-content-between">
-                            Select an Subject
-                        </option>
-                        <option value="Specialities">Specialities</option>
-                        <option value="Locations">Locations</option>
-                        <option value="Insurance">Insurances</option>
-                        <option value="option3">Other</option>
-                    </select>               
+                    </select>
                 </div>
                 <div id="otherInput" class="d-none">
-                    <!-- <label for="other">Please specify:</label> -->
-                    <input type="text" id="other" name="other" class="form-control  inputs rounded-4" placeholder="Specify subject">
+                    <input type="text" id="other" name="other" class="form-control inputs rounded-pill p-3" placeholder="Specify insurances">
                 </div>
-        
+                
                 <div class="form-group">
-                    <!-- <label for="message">Message</label> -->
-                    <textarea class="form-control  inputs textarea p-3" id="message" name="message" placeholder="Enter message" rows="5" required></textarea>
+                    <select id="purpose" name="purpose" required class="form-control inputs rounded-pill p-3">
+                        <option value="" disabled selected>Purpose</option>
+                        <option value="general">General</option>
+                        <option value="appointment">Cita</option>
+                    </select>
                 </div>
-                <div class="w-100 d-flex justify-content-center ">
-                    <button type="submit" class=" p-2 w-100 send-button">
+                
+                <div class="form-group">
+                    <select id="condition" name="condition" required onchange="toggleOtherInputCondition()" class="form-control inputs rounded-pill p-3">
+                        <option value="" disabled selected>Condition</option>
+                        <option value="hip">Hip</option>
+                        <option value="knee">Knee</option>
+                        <option value="column">Column</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="otherInputCondition" class="d-none">
+                    <input type="text" id="otherCondition" name="otherCondition" class="form-control inputs rounded-pill p-3" placeholder="Specify Condition">
+                </div>
+            
+                <div class="form-group">
+                    <textarea class="form-control inputs textarea p-3" id="message" name="message" placeholder="Comments" rows="5" required></textarea>
+                </div>
+                <div class="w-100 d-flex justify-content-center">
+                    <button type="submit" class="p-2 w-100 send-button">
                         <i class="fas fa-paper-plane send-icon"></i>
-
                     </button>
                 </div>
             </form>
-            
           </div>
           
         </div>
-        <div class="d-flex w-100 justify-content-end">
-        <div class="d-flex contact-data flex-column justify-content-around align-items-end w-75 ">
-                <div id="slidingDiv" class=" d-flex flex-column align-items-end justify-content-around h-100 w-100">
-                    <div class="hero-foot shadow d-flex flex-row rounded-pill justify-content-around align-items-center contact-info p-3 w-100">
+        <div class="d-flex w-100 justify-content-center info-back">
+            <div class="d-flex  contact-data flex-column justify-content-center align-items-center w-75  ">
+                <div id="slidingDiv" class=" d-flex flex-column align-items-end justify-content-around w-100">
+                    <div class="hero-foot  d-flex flex-row rounded-pill justify-content-around align-items-center contact-info p-3 w-100">
                         <img src="../imgs/phone.png" class="contact-logo me-1" alt="">
-                        <div class="contact-text fst-italic ms-2 text-white">999-999-9999</div>
+                        <div class="contact-text fst-italic ms-2 text-white">+1 (787) 340-0913</div>
                     </div>
-                    <div class="hero-foot shadow d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
+                    <div class="hero-foot  d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
                         <img src="../imgs/email-4.png" class="contact-logo" alt="">
                         <div class="contact-text fst-italic ms-2 text-white">info@oscpr.com</div>
                     </div>
-                    <div class="hero-foot shadow d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
+                    <div class="hero-foot  d-flex flex-row w-100 justify-content-around align-items-center contact-info p-3">
                         <img src="../imgs/location-2.png" class="contact-logo" alt="">
                         <div class="contact-text fst-italic ms-2 text-white">Hospital Damas</div>
                     </div>
-                    <!-- <div class="d-flex flex-column justify-content-center align-items-center w-100 rounded-pill inputs p-3">
-                        <img src="../imgs/logo.png" class="damas-logo" alt="">
-                        <h3 class="text-dark contact-text">Hospital Damas</h3>
-                        <div class="text-secondary contact-text text-center">
-                            2213 Ponce Bypass, Ponce, 00717
-                        </div>
-                    </div> -->
                 </div>  
             </div>
         </div>
@@ -251,7 +309,32 @@
         </div>
     </section>
     <script>
-      
+      document.getElementById('dynamicForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission for now
+
+            const purpose = document.getElementById('purpose').value;
+            const accessKey = document.getElementById('accessKey');
+            let actionUrl = 'https://api.web3forms.com/submit'; // default URL
+            let key = ''; // default access key
+
+            if (purpose === 'general') {
+                actionUrl = 'https://api.web3forms.com/submit';
+                key = 'a6f0f64d-8e05-4fa6-a767-d6d1f96fd546'; // replace with actual key
+                console.log("General purpose selected, action URL:", actionUrl, "access key:", key);
+            } else if (purpose === 'appointment') {
+                actionUrl = 'https://api.web3forms.com/submit';
+                key = '4ffea648-07ad-4b15-bf44-71c59455e57f'; // replace with actual key
+                console.log("Appointment purpose selected, action URL:", actionUrl, "access key:", key);
+            }
+
+            this.action = actionUrl;
+            accessKey.value = key;
+            console.log("Form action set to:", this.action);
+            console.log("Access key set to:", accessKey.value);
+
+            // Now allow the form to submit
+            this.submit();
+    });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>

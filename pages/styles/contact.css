@@ -43,9 +43,20 @@ nav{
 }
 #specialities{
     width: 100vw;
+    height: 100%;
     /* height: 90vh; */
     background-color: rgb(238, 238, 238);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background-image: url('/pages/imgs/pexels-dorothycastillo-2270328.jpg');
+    background-size: cover; */
+    /* background-image: url('/pages/imgs/pexels-dorothycastillo-2270328.jpg'); */
+    /* background-size: cover; */
+    
 }
+/* .contact-container{ */
+    /* background-color: ;
+} */
 .some-text{
     font-size: 17px;
 }
@@ -67,10 +78,13 @@ nav{
 }
 .hero-foot{
     color: white;
+    /* background-color: grey; */
     border-top-left-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    /* border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important; */
 }
 .hero-logo-foot{
     height: 3vh;
@@ -87,12 +101,19 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 25vw;
+    width: 35vw;
     background-color: transparent;
 }
 .inputs{
-    background-color: rgb(250, 250, 250);
-    color: rgb(191, 191, 191);
+    /* background-color: rgb(250, 250, 250); */
+    background-color: rgba(228, 228, 228, 0.689);
+    /* color: rgb(191, 191, 191); */
+    color: rgb(130, 130, 130);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+
     /* border: 2px solid #848484; */
 
 }
@@ -101,13 +122,13 @@ nav{
 
 }
 .inputs::placeholder{
-    color: rgb(191, 191, 191)
+    color: rgb(130, 130, 130)
 }
 .send-title{
     font-family: 'Oswald';
 }
 .contact-data{
-    height: 90vh;
+    height: 100vh;
 }
 
 .contact-text{
@@ -152,18 +173,29 @@ nav{
     /* padding: 20px; */
     border-radius: 5px;
     transform: translateX(100%);
+    height: 90vh;
     transition: transform 1s ease-in-out;
+
     opacity: 0; /* Start hidden */
 }
 
 #slidingDiv.slide-in {
     transform: translateX(0);
-    opacity: 1; /* Fade in */
+    opacity: 1; 
 }
 .contact-info{
-    background-color:#1a2230 ;
+    /* background-color:#1a2230 ; */
+    background-color: transparent;
+
 
 }
+.info-back{
+    background: linear-gradient(rgb(47, 47, 47),rgba(47, 47, 47, 0.568)),url('/pages/imgs/pexels-dorothycastillo-2270328.jpg');
+    background-size: cover; 
+
+    
+
+} 
 @media (max-width: 768px) {
     /* .about-text{
         height: 150vh;
@@ -188,7 +220,7 @@ nav{
         font-size: 25px;
     }
     #footer{
-        height: 40vh;
+        height: 10vh;
     }
     .contact-form{
         width:70vw;
