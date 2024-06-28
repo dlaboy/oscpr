@@ -20,10 +20,15 @@ body{
 /* NAVBAR */
 nav{
     color: white;
+
+}
+.navbar {
+    z-index: 1050; /* Higher than other elements on the page */
+    font-size: 20px;
 }
 
 .nav-logo{
-    height: 15vh;
+    height: 20vh;
     
 }
 #about-intro{

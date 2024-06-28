@@ -21,9 +21,13 @@ body{
 nav{
     color: white;
 }
+.navbar {
+    z-index: 1050; /* Higher than other elements on the page */
+    font-size: 20px;
+}
 
 .nav-logo{
-    height: 15vh;
+    height: 20vh;
     
 }
 #about-intro{
@@ -93,7 +97,7 @@ nav{
     height: 10vh;
 }
 .foot-logo-container-img{
-    height: 10vh;
+    height: 20vh;
 
     
 }
@@ -217,7 +221,7 @@ nav{
     
     } */
     .header-title{
-        font-size: 25px;
+        font-size: 35px;
     }
     #footer{
         height: 10vh;
@@ -274,7 +278,7 @@ nav{
     
     } */
     .header-title{
-        font-size: 40px;
+        font-size: 45px;
         
     } 
     .contact-logo{
