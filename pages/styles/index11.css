@@ -131,7 +131,7 @@ nav{
 }
 
 .nav-logo{
-    height: 20vh;
+    height: 18vh;
     
 }
 
@@ -377,6 +377,9 @@ nav{
         left: 0;
         background-color: #1a1e30; 
     }
+    /* .navbar {
+        font-size: 20px;
+    } */
     /* .disclaimer-button{
         position: fixed;
         bottom: 0;
@@ -395,6 +398,13 @@ nav{
 
     }
 }
+@media (min-width:769px) and (max-width: 991px) {
+    /* .navbar {
+        font-size: 15px;
+    } */
+
+
+}
 
 /* Larger devices (desktops, more than 992px) */
 @media (min-width: 992px) {
@@ -408,4 +418,5 @@ nav{
        width: 70vw;
 
     } */
+    
 }
