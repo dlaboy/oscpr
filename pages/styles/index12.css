@@ -416,7 +416,7 @@ nav{
 /* Larger devices (desktops, more than 992px) */
 @media (min-width: 993px) and (max-width: 1200px) {
     .navbar {
-        font-size: 15px;
+        font-size: 17px;
     }
     .hero-title{
         font-size: 50px;
