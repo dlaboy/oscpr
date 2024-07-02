@@ -422,6 +422,10 @@ nav{
         font-size: 50px;
         font-family: 'Oswald';
     }
+    .nav-logo{
+        height: 15vh;
+        
+    }
     /* .disclaimer-bottom{
         display: flex;
     }
