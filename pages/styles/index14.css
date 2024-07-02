@@ -414,7 +414,7 @@ nav{
 }
 
 /* Larger devices (desktops, more than 992px) */
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1300px) {
     .navbar {
         font-size: 17px;
     }
