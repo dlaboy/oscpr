@@ -17,6 +17,11 @@ body{
     font-size: 45px;
     color: white;
 }
+.sub-titles{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    
+}
 /* NAVBAR */
 nav{
     color: white;
@@ -43,7 +48,7 @@ nav{
 }
 #specialities{
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: white;
 }
 .some-text{
@@ -53,11 +58,18 @@ nav{
     z-index: 1050; /* Higher than other elements on the page */
     font-size: 20px;
 }
+.titles{
+    font-family: 'Oswald';
+    font-size: 70px;
+    padding-bottom: 3rem;
+}
 
-
-#footer{
-    height: 60vh;
+/* #footer{
+    height: 40vh;
     width: 100vw;
+} */
+.bio-text{
+    line-height: 32px;
 }
 .footer-container{
     height: 90%;
@@ -84,6 +96,9 @@ nav{
 
     
 }
+.foto-bio{
+    height: 300px;
+}
 
 @media (max-width: 768px) {
     /* .about-text{
@@ -105,8 +120,15 @@ nav{
     .header-title{
         font-size: 30px;
     }
-    #footer{
-        height: 90vh;
+    /* #footer{
+        height: 70vh;
+    } */
+    .foto-bio{
+        height: 500px;
+    }
+
+    .titles{
+        font-size: 50px;
     }
 
 }
@@ -117,8 +139,11 @@ nav{
     #about-company{
         height: 140vh;
     } */
-    #footer{
-        height: 80vh;
+    /* #footer{
+        height: 70vh;
+    } */
+    .foto-bio{
+        height: 500px;
     }
 
 
