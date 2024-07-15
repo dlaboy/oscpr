@@ -130,6 +130,13 @@ nav{
     .titles{
         font-size: 50px;
     }
+    .foot-logo-container-img{
+        height: 15vh;
+    }
+    .damas-logo{
+        height: 15vh;
+
+    }
 
 }
 @media (min-width:769px) and (max-width: 991px) {
