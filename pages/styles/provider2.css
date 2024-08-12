@@ -71,6 +71,11 @@ nav{
 .bio-text{
     line-height: 32px;
 }
+
+#footer{
+    height: 50vh;
+    width: 100vw;
+}
 .footer-container{
     height: 90%;
 }
@@ -96,9 +101,10 @@ nav{
 
     
 }
-.foto-bio{
-    height: 300px;
-}
+
+
+
+
 
 @media (max-width: 768px) {
     /* .about-text{
@@ -162,7 +168,7 @@ nav{
         font-size: 15px;
     } */
     .some-text{
-        font-size: 15px;
+        font-size: 20px;
     }
    
     /* .about-tag{
