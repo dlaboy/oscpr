@@ -9,6 +9,13 @@ body{
     /* overflow: hidden; */
 
 }
+.stryker-text{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
 .home-container{
     display: flex;
     flex-direction: column;
