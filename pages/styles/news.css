@@ -20,6 +20,8 @@ body{
 /* NAVBAR */
 nav{
     color: white;
+    font-size: 20px;
+
 }
 .about-tag{
     font-size: 35px;
@@ -27,7 +29,7 @@ nav{
 
 }
 .nav-logo{
-    height: 15vh;
+    height: 20vh;
     
 }
 #about-intro{
